@@ -1,0 +1,249 @@
+body {
+    background-color: #600047; 
+    font-family: 'Brush Script MT';
+    text-align: center;
+    margin: 0; 
+    padding: 0; /* Changed to 0 so the gray stops pushing from the top and bottom */
+}
+
+/* SpecsBar */
+
+.specsbar {
+    background-color:   #FEF200; /* Dark gray to match your footer! */
+    width: 100%;
+    padding: 15px 0;
+
+    border: 1px solid #ffffff; /* 3px thick, solid line, white color */
+    box-sizing: border-box; /* Keeps the border strictly inside the 100% width limit */
+}
+
+.specsbar ul {
+    list-style-type: none; /* This removes the default bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Puts the links side-by-side */
+    justify-content: left; /* Centers the links on the screen */
+    gap: 20px; 
+    
+}
+
+.specsbar a {
+    color: black; /* Makes the link text white */
+    text-decoration: none; /* Removes the default blue underline */
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s; /* Makes the hover effect fade in smoothly */
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: #600047; /* Dark gray to match your footer! */
+    width: 100%;
+    padding: 15px 0;
+    
+}
+
+.navbar ul {
+    list-style-type: none; /* This removes the default bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Puts the links side-by-side */
+    justify-content: center; /* Centers the links on the screen */
+    gap: 40px; /* Adds space between each link */
+}
+
+.navbar a {
+    color: #ffffff; /* Makes the link text white */
+    text-decoration: none; /* Removes the default blue underline */
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s; /* Makes the hover effect fade in smoothly */
+}
+
+/* This triggers when you hover your mouse over a link */
+.navbar a:hover {
+    color: #a9a9a9; /* Changes the text to a lighter gray on hover */
+}
+
+.container {
+    background-color: #cdcdcd;
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    
+    /* Inaltime */
+    min-height: 100vh; 
+    box-sizing: border-box; 
+    
+    padding: 50px 60px; 
+    
+    /* Shadow */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2); 
+
+    border-radius: 8px;
+}
+
+/* Container Text */
+.container h1 {
+    color: black;
+    font-size: 80px; 
+    margin-bottom: 100px; 
+}
+
+/* This controls the main row holding both the text and image */
+/* Holds the two sections side-by-side */
+.row-wrapper {
+    display: flex;
+    gap: 50px; /* The space between the two sections */
+    margin-top: 40px; 
+    justify-content: center; /* Keeps them centered on the page */
+}
+
+/* Tells each section to take up exactly half the space */
+/* 1. The Main Card Container */
+.card-section {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; /* Stacks the top block and bottom block vertically */
+    gap: 15px; /* Adds space between the top section and bottom section */
+    background-color: #f9f9f9; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    text-align: left;
+}
+
+/* 2. The Top Block (Image left, text right) */
+.card-top {
+    display: flex; /* Puts the image and text side-by-side */
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* 3. The Image */
+.card-top img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0; /* Stops the text from squishing the photo */
+}
+
+/* 4. The Top Text */
+.card-text {
+    flex: 1; /* Takes up the rest of the space on the right */
+}
+.card-text h2 {
+    margin-top: 0;
+}
+
+/* 5. The Bottom Text Block */
+.card-bottom {
+    border-top: 1px solid #dddddd; /* Optional: Adds a sleek divider line above the bottom text! */
+    padding-top: 15px; /* Space between the line and the text */
+    font-size: 15px;
+    color: #444444; /* Makes the bottom text slightly softer than the main text */
+}
+
+.forced-size-img {
+    width: 100%;  /* Forces the exact width */
+    height: 100%; /* Forces the exact height */
+    
+    /* THE MAGIC RULE: */
+    object-fit: cover; 
+    
+    /* Optional: round the corners so it looks neat */
+    border-radius: 8px; 
+}
+
+/* This controls your new footer at the bottom of the page */
+    footer {
+        background-color: #333333; /* A nice dark charcoal gray */
+        color: #ffffff; /* Makes the text white */
+        text-align: center; /* Centers the copyright text */
+        padding: 20px 0; /* Adds 20px of space above and below the text */
+        margin-top: 0px; /* Pushes the footer away from the white container above it */
+        width: 100%; /* Ensures it stretches all the way across the screen */
+    }
+
+    /* Removes the default margin from the paragraph inside the footer so it centers perfectly */
+    footer p {
+        margin: 0; 
+        font-size: 14px; /* Makes the footer text slightly smaller and subtle */
+    }
+
+/* --- MOBILE RESPONSIVE RULES --- */
+@media (max-width: 1000px) {
+
+    body {
+        background-color: #600047; 
+        font-family: 'Brush Script MT';
+        text-align: center;
+        margin: 0; 
+        padding: 0; /* Changed to 0 so the gray stops pushing from the top and bottom */
+    }
+    
+    
+    .row-wrapper {
+        flex-direction: column;
+        gap: 30px; /* Slightly smaller gap between them on mobile */
+    }
+    
+
+
+    /* 2. Fix the giant image so it fits on a phone screen */
+    .forced-size-img {
+        width: 200%; /* Tells the image to shrink to fit whatever size the phone is */
+        max-width: 200%; /* Safety rule: stops it from getting bigger than your original size */
+        height: 200%; /* Makes the image a bit shorter so it doesn't take up the entire phone screen */
+        align-items: center;
+    }
+
+    .navbar {
+        background-color: #600047; /* Dark gray to match your footer! */
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .navbar a {
+        color: #ffffff; /* Makes the link text white */
+        text-decoration: none; /* Removes the default blue underline */
+        font-size: 40px;
+        font-weight: bold;
+        transition: color 0.3s; /* Makes the hover effect fade in smoothly */
+    }
+
+    .specsbar {
+        background-color: #FEF200; /* Dark gray to match your footer! */
+        width: 100%;
+        padding: 30px 0;
+
+        border: 1px solid #ffffff; /* 3px thick, solid line, white color */
+        box-sizing: border-box; /* Keeps the border strictly inside the 100% width limit */
+    }
+
+    .specsbar a {
+        color: black; /* Makes the link text white */
+        text-decoration: none; /* Removes the default blue underline */
+        font-size: 32px;
+        font-weight: bold;
+        transition: color 0.3s; /* Makes the hover effect fade in smoothly */
+    }
+
+    /* This controls your new footer at the bottom of the page */
+    footer {
+        background-color: #333333; /* A nice dark charcoal gray */
+        color: #ffffff; /* Makes the text white */
+        text-align: center; /* Centers the copyright text */
+        padding: 20px 0; /* Adds 20px of space above and below the text */
+        margin-top: 0px; /* Pushes the footer away from the white container above it */
+        width: 100%; /* Ensures it stretches all the way across the screen */
+    }
+
+    /* Removes the default margin from the paragraph inside the footer so it centers perfectly */
+    footer p {
+        margin: 0; 
+        font-size: 28px; /* Makes the footer text slightly smaller and subtle */
+    }
+}
