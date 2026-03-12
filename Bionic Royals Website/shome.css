@@ -160,7 +160,7 @@ body {
     color: #333333;
     font-size: 80px; 
     margin-bottom: 100px; 
-    font-family: 'Brush Script MT', cursive;
+    /* font-family: 'Brush Script MT', cursive; */
 }
 /* Holds the buttons and the window together */
 .carousel-wrapper {
@@ -280,7 +280,7 @@ body {
 /* Sponsors Grid */
 .sponsors-grid{
     display:grid;
-    grid-template-columns: repeat(10, auto); /* 10 per row */
+    grid-template-columns: repeat(5, auto); /* 10 per row */
     gap:30px;
     justify-content:center;
     align-items:center;
