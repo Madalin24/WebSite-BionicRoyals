@@ -11,7 +11,7 @@ body {
 
 .specsbar {
     background-color:   #FEF200; /* Dark gray to match your footer! */
-    width: 100%;
+    width: 100px;
     padding: 15px 0;
 
     border: 1px solid #ffffff; /* 3px thick, solid line, white color */
@@ -41,11 +41,18 @@ body {
 /* --- HAMBURGER HEADER --- */
 .header {
     text-align: left; /* Ensures the button stays on the left */
-    background-color: #600047; /* Dark gray to match your footer! */
+    background-color: #600046c2; /* Dark gray to match your footer! */
     width: 100%;
-    padding: 15px 20px;
-    margin-bottom: 20px;
-    position: relative;
+    padding: 10px 20px;
+    
+    position: fixed;
+    top: 0px; /* Glues it to the very top edge of the screen */
+    left: 0; /* Glues it to the left edge */
+    width: 100%; /* Stretches it all the way across */
+    z-index: 1000; /* Makes sure it stays on top of your photos */
+    box-sizing: border-box; /* Stops the padding from making it too wide */
+
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Styles the 3-line button */
@@ -58,6 +65,10 @@ body {
     padding: 0;
 }
 
+.header.hide-header {
+    /* Pushes the header exactly its own height UP, hiding it off the screen! */
+    transform: translateY(-100%); 
+}
 /* --- THE DROPDOWN MENU --- */
 .dropdown-menu {
     display: none; /* THE MAGIC: Hides the menu by default! */
@@ -141,6 +152,8 @@ body {
     box-shadow: 0 0 15px rgba(0,0,0,0.2); 
 
     border-radius: 8px;
+
+    margin-top: 105px;
 }
 
 /* Container Text */
@@ -188,8 +201,8 @@ body {
 
 /* 3. The Image */
 .card-top img {
-    width: 150px; 
-    height: 150px; 
+    width: 200px; 
+    height: 200px; 
     object-fit: cover;
     border-radius: 8px;
     flex-shrink: 0; /* Stops the text from squishing the photo */

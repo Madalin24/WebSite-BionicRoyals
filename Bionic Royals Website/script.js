@@ -1,5 +1,26 @@
 const windowElement = document.getElementById("carouselWindow");
 
+// --- SMART STICKY HEADER LOGIC ---
+
+let lastScrollTop = 0; // Remembers where you were on the page
+const header = document.querySelector('.header'); // Grabs your header
+
+window.addEventListener('scroll', function() {
+    // Figures out exactly how many pixels down the page you currently are
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+        // You scrolled DOWN! Hide the header.
+        header.classList.add('hide-header');
+    } else {
+        // You scrolled UP! Show the header.
+        header.classList.remove('hide-header');
+    }
+    
+    // Updates the memory for the next time you scroll
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
+});
+
 function slideRight() {
     // 1. Grab the first image
     const firstImage = windowElement.firstElementChild;

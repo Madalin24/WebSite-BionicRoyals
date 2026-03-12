@@ -9,12 +9,14 @@ body {
     width: 100%;
     padding: 10px 20px;
     
-    position: absolute;
+    position: fixed;
     top: 0; /* Glues it to the very top edge of the screen */
     left: 0; /* Glues it to the left edge */
     width: 100%; /* Stretches it all the way across */
     z-index: 1000; /* Makes sure it stays on top of your photos */
     box-sizing: border-box; /* Stops the padding from making it too wide */
+
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Styles the 3-line button */
@@ -25,6 +27,11 @@ body {
     font-size: 30px; /* Makes the lines nice and big */
     cursor: pointer;
     padding: 0;
+}
+
+.header.hide-header {
+    /* Pushes the header exactly its own height UP, hiding it off the screen! */
+    transform: translateY(-100%); 
 }
 
 /* --- THE DROPDOWN MENU --- */
