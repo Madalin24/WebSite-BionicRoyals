@@ -192,6 +192,12 @@ body {
     text-align: left;
 }
 
+.card-section2{
+    flex:1;
+    display: felx;
+    padding: 20px;
+}
+
 /* 2. The Top Block (Image left, text right) */
 .card-top {
     display: flex; /* Puts the image and text side-by-side */
@@ -224,14 +230,14 @@ body {
     color: #444444; /* Makes the bottom text slightly softer than the main text */
 }
 
-.forced-size-img {
-    width: 100%;  /* Forces the exact width */
-    height: 100%; /* Forces the exact height */
+.square-img {
+    width: 200px;  /* Forces the exact width */
+    height: 200px; /* Forces the exact height */
     
-    /* THE MAGIC RULE: */
+    /* THE MAGIC RULE: Stops the image from stretching! */
     object-fit: cover; 
     
-    /* Optional: round the corners so it looks neat */
+    /* Optional: Rounds the corners to make it look smooth */
     border-radius: 8px; 
 }
 
