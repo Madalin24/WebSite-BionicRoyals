@@ -1,0 +1,457 @@
+/* =========================================
+   BASE & GLOBAL STYLES
+   ========================================= */
+body {
+    background-color: #600047;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#title {
+    text-align: center;
+}
+
+/* =========================================
+   HEADER & NAVIGATION
+   ========================================= */
+.header {
+    text-align: left;
+    background-color: rgba(96, 0, 70, 0.76); 
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header.hide-header {
+    transform: translateY(-100%);
+}
+
+.hamburger-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 70px;
+    background-color: #770058;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 40px 12px 20px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #555555;
+}
+
+.specsbar {
+    background-color: #FEF200;
+    width: 100%;
+    padding: 15px 0;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.specsbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.specsbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* =========================================
+   HOME PAGE SPECIFIC
+   ========================================= */
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    background: url("images/hero.jpg") center/cover no-repeat;
+    margin-bottom: 50px;
+    margin-top: -8px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.title-box {
+    margin-left: 60px;
+    padding: 20px 40px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 8px;
+}
+
+.title-box h1 {
+    color: #9034dc;
+    font-size: 60px;
+    margin: 0;
+}
+
+.title-box p {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-home {
+    background-color: #cdcdcd;
+    border-radius: 8px;
+    width: 95%;
+    max-width: 1400px;
+    margin: -10px auto;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 50px 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.container-home h1 {
+    color: #333333;
+    font-size: 80px;
+    margin-bottom: 100px;
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.carousel-window {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carousel-window::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-window img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.hover-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.hover-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.secret-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.hover-box:hover .secret-text {
+    opacity: 1;
+}
+
+.awards-box {
+    border: 3px solid #9034dc;
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin: 40px auto 80px auto;
+    background: rgba(255,255,255,0.15);
+    max-width: 900px;
+    background-color: white;
+}
+
+.awards-list {
+    list-style: disc;
+    padding-left: 40px;
+    margin: 0;
+    text-align: left;
+}
+
+.awards-list li {
+    font-size: 20px;
+    margin: 12px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.sponsor-box {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.sponsor-box img {
+    max-width: 140px;
+    height: auto;
+    display: block;
+}
+
+.sponsor-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sponsor-box:hover .sponsor-text {
+    opacity: 1;
+}
+
+/* =========================================
+   TEAM PAGE SPECIFIC
+   ========================================= */
+.container-team {
+    background-color: #cdcdcd;
+    width: 95%;
+    max-width: 1400px;
+    margin: 105px auto 0 auto;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 10px 60px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+.container-team h1 {
+    color: black;
+    font-size: 80px;
+    margin-bottom: 100px;
+}
+
+.container-team h2 {
+    color: black;
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+.row-wrapper {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.card-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.card-section2 {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+}
+
+.card-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.card-top img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.card-text {
+    flex: 1;
+}
+
+.card-text h2 {
+    margin-top: 0;
+}
+
+.card-bottom {
+    border-top: 1px solid #dddddd;
+    padding-top: 15px;
+    font-size: 15px;
+    color: #444444;
+}
+
+.square-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.forced-size-img {
+    width: 200%;
+    max-width: 200%;
+    height: 200%;
+    align-items: center;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* =========================================
+   MEDIA QUERIES
+   ========================================= */
+@media (max-width: 1200px) {
+    .sponsors-grid {
+        grid-template-columns: repeat(6, auto);
+    }
+}
+
+@media (max-width: 1000px) {
+    .row-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .forced-size-img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .specsbar {
+        padding: 30px 0;
+    }
+
+    .specsbar a {
+        font-size: 32px;
+    }
+
+    footer p {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 800px) {
+    .sponsors-grid {
+        grid-template-columns: repeat(4, auto);
+    }
+}
+
+@media (max-width: 500px) {
+    .sponsors-grid {
+        grid-template-columns: repeat(2, auto);
+    }
+}

@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Bionic Royals</title>
-    <link rel="stylesheet" href="shome.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
 </head>
 
 <body>
-
     <header class="header">
         <button class="hamburger-btn" onclick="toggleMenu()">
             &#9776; 
@@ -16,464 +14,409 @@
         
         <nav class="dropdown-menu" id="dropdownMenu">
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="team.html">Team</a></li>
-                <!-- <li><a href="alumni.html">Alumni</a></li> -->
             </ul>
         </nav>
     </header>
 
-    <!-- <nav class="navbar">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav> -->
-
-<!-- Hero Image -->
-<div class="hero">
-    <div class="overlay">
-        <div class="title-box">
-            <h1>Bionic Royals</h1>
-            <p> We build robots! We build the future!</p>
+    <div class="hero">
+        <div class="overlay">
+            <div class="title-box">
+                <h1>Bionic Royals</h1>
+                <p> We build robots! We build the future!</p>
+            </div>
         </div>
+    </div>
+
+    <div class="container-home">
+        <h1 id="title">Membrii Echipei</h1>
+
+        <div class="image-side carousel-wrapper">
+         <button onclick="slideLeft()">&#8592;</button>
+         
+         <div class="carousel-window" id="carouselWindow">
+             
+            <div class="hover-box">
+                <img src="images/members/mlisan-mirela.png" alt="G">
+                <div class="secret-text">
+                    <h3>Mlisan Mirela<br>- Mentor -</h3>
+                    <p>
+                       - Profesor de informatica -
+                       <br>
+                       - Temelia echipei -
+                       <br>
+                   </p>
+                </div>
+            </div>
+
+            <div class="hover-box">
+                <img src="images/members/coltos-robert.png" alt="G">
+                <div class="secret-text">
+                    <h3>Coltos Robert<br>- Mentor -</h3>
+                    <p>
+                       - Mentor Tehnic -
+                       <br>
+                       - Rezolva nevoile tehnice ale echipei -
+                       <br>
+                   </p>
+                </div>
+            </div>
+
+            <div class="hover-box">
+                <img src="images/members/antonescu-valeria.png" alt="G">
+                <div class="secret-text">
+                    <h3>Antonescu Valeria<br>- Mentor -</h3>
+                    <p>
+                       - Profesor de limba si literatura romana -
+                       <br>
+                       - Aptitudini de relationare -
+                       <br>
+                   </p>
+                </div>
+            </div>
+
+            <div class="hover-box">
+                <img src="images/members/popescu-daria.png" alt="G">
+                <div class="secret-text">
+                    <h3>Popescu Daria</h3>
+                    <p>
+                       - Team Leader -
+                       <br>
+                       - PR -
+                       <br>
+                       - Design Grafic -
+                       <br>
+                       - Social Media -
+                   </p>
+                </div>
+            </div>
+
+            <div class="hover-box">
+               <img src="images/members/deaconescu-alex.png" alt="G">
+               <div class="secret-text">
+                   <h3>Deaconescu Alex</h3>
+                   <p>
+                      - Departament Tehnic -
+                      <br>
+                      - Capitan Constructie -
+                      <br>
+                      - Constructor -
+                  </p>
+               </div>
+           </div>
+
+           <div class="hover-box">
+               <img src="images/members/lita-andrei.png" alt="G">
+               <div class="secret-text">
+                   <h3>Lita Andrei</h3>
+                   <p>
+                      - Departament Tehnic -
+                      <br>
+                      - Capitan Programare -
+                      <br>
+                      - Programator -
+                  </p>
+               </div>
+           </div>
+
+            <div class="hover-box">
+                <img src="images/members/oprescu-octavian.png" alt="G">
+                <div class="secret-text">
+                    <h3>Oprescu Octavian</h3>
+                    <p>
+                       - Departament Tehnic -
+                    <br>
+                       - Programator -
+                    </p>
+                </div>
+            </div>
+
+            <div class="hover-box">
+                <img src="images/members/olaru-roberto.png" alt="G">
+                <div class="secret-text">
+                    <h3>Olaru Roberto</h3>
+                    <p>
+                       - Departament Tehnic -
+                       <br>
+                       - Constructor - 
+                   </p>
+                </div>
+            </div>
+
+            <div class="hover-box">
+               <img src="images/members/radu-ioana.png" alt="G">
+               <div class="secret-text">
+                   <h3>Radu Ioana</h3>
+                   <p>
+                      - PR -
+                      <br>
+                      - Fotograf -
+                      <br>
+                      - Activitati -
+                  </p>
+               </div>
+           </div>
+
+           <div class="hover-box">
+               <img src="images/members/drumia-razvan.png" alt="G">
+               <div class="secret-text">
+                   <h3>Drumia Razvan</h3>
+                   <p>
+                      - Departament Tehnic -
+                      <br>
+                      - Constructor -
+                  </p>
+               </div>
+           </div>
+
+           <div class="hover-box">
+               <img src="images/members/dascalu-luca.png" alt="G">
+               <div class="secret-text">
+                   <h3>Dascalu Luca</h3>
+                   <p>
+                      - Departament Tehnic -
+                      <br>
+                      - Constructor -
+                  </p>
+               </div>
+           </div>
+
+           <div class="hover-box">
+               <img src="images/members/popescu-tudor.png" alt="G">
+               <div class="secret-text">
+                   <h3>Popescu Tudor</h3>
+                   <p>
+                      - Departament Tehnic -
+                      <br>
+                      - Programator -
+                  </p>
+               </div>
+           </div>
+
+           <div class="hover-box">
+               <img src="images/members/bughelea-mihnea.png" alt="G">
+               <div class="secret-text">
+                   <h3>Bughelea Mihnea</h3>
+                   <p>
+                      - Departament Tehnic -
+                      <br>
+                      - Constructor -
+                  </p>
+               </div>
+           </div>
+
+           <div class="hover-box">
+               <img src="images/members/nica-maya.png" alt="G">
+               <div class="secret-text">
+                   <h3>Nica Maya</h3>
+                   <p>
+                      - PR -
+                      <br>
+                      - Outreach -
+                      <br>
+                      - Activitati -
+                  </p>
+               </div>
+           </div>
+
+           <div class="hover-box">
+               <img src="images/members/cretan-daria.png" alt="G">
+               <div class="secret-text">
+                   <h3>Cretan Daria</h3>
+                   <p>
+                      - PR -
+                      <br>
+                      - Outreach -
+                      <br>
+                      - Activitati -
+                  </p>
+               </div>
+           </div>
+
+           <div class="hover-box">
+               <img src="images/members/traistaru-razvan.png" alt="G">
+               <div class="secret-text">
+                   <h3>Traistaru Razvan</h3>
+                   <p>
+                      - PR -
+                      <br>
+                      - Outreach -
+                      <br>
+                      - Activitati -
+                  </p>
+               </div>
+           </div>
+
+           <div class="hover-box">
+               <img src="images/members/caraponu-mihai.png" alt="G">
+               <div class="secret-text">
+                   <h3>Caraponu Mihai</h3>
+                   <p>
+                      - PR -
+                      <br>
+                      - Outreach -
+                      <br>
+                      - Activitati -
+                  </p>
+               </div>
+           </div>
+
+         </div> 
+         <button onclick="slideRight()">&#8594;</button>
+     </div>
+     
+    <br><br><br><br><br><br>
+    
+    <h1 id="title">Premii</h1>
+    <div class="awards-box">
+        <ul class="awards-list">
+           <h2>Sezonul 3 (Rover Ruckus, 2018-2019)</h2>
+           <h3>Etapa Nationala</h3>
+            <li>Motivate Award I</li>
+            <li>Promote Award I </li>
+           <br>
+            <h2>Sezonul 4 (Skystone, 2019-2020)</h2>
+            <h3>Etapa Regionala</h3>
+            <li>Inspire Award III</li>
+            <li>Finallist Alliance</li>
+            <li>Record European</li>
+           <br>
+            <h2>Sezonul 5 (Ultimate Goal, 2020-2021)</h2>
+            <h3>Etapa Regionala</h3>
+            <li>Control Award I</li>
+            <li>Locul 5 in Best Ranking Teams</li>
+           <br>
+            <h2>Sezonul 6 (Freight Frenzy, 2021-2022)</h2>
+            <h3>Etapa Regionala</h3>
+            <li>Motivate Award I</li>
+            <li>Locul 5 in Best Ranking Teams</li>
+            <li>Participare la concursul international Chicago Robotics Invitational, fiind in prima jumatate a clasamentului</li>
+           <br>
+           <h2>Sezonul 7 (Power Play, 2022-2023)</h2>
+            <li>Calificare la Etapa Nationala</li>
+           <br>
+            <h2>Sezonul 8 (Center Stage, 2023-2024)</h2>
+           <h3>Etapa Regionala</h3>
+            <li>Control Award I</li>
+            <li>Winning Alliance 2nd pick</li>
+           <h3>Etapa Nationala</h3>
+           <li>Design Award I</li>
+           <br>
+           <h2>Sezonul 10 (Decode, 2025-2026)</h2>
+           <h3>Etapa Regionala</h3>
+            <li>Reach Award I</li>
+           <br>
+        </ul>
+    </div>
+    
+    <br><br><br><br><br><br>
+    
+    <h1 id="title">Sponsori</h1>
+    <div class="sponsors-grid">
+        <a href="https://primariavl.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/primariavl.png" alt="Primaria Ramnicu Valcea">
+            <div class="sponsor-text"><h3>Primaria Municipiului Ramnicu Valcea</h3></div>
+        </a>
+        <a href="https://xavitel.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/xavitel.png" alt="Xavitel">
+            <div class="sponsor-text"><h3>Xavitel</h3></div>
+        </a>
+        <a href="https://www.annabella.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/annabella.png" alt="Annabella">
+            <div class="sponsor-text"><h3>Annabella</h3></div>
+        </a>
+        <a href="https://rotakt.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/rotakt.png" alt="Rotakt">
+            <div class="sponsor-text"><h3>Rotakt</h3></div>
+        </a>
+        <a href="https://www.nurvil.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/nurvil.png" alt="Nurvil">
+            <div class="sponsor-text"><h3>Nurvil</h3></div>
+        </a>
+        <a href="https://www.minet.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/minet.png" alt="Minet">
+            <div class="sponsor-text"><h3>Minet</h3></div>
+        </a>
+        <a href="https://www.metaltechniks.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/metal-techniks.png" alt="Metal Techniks">
+            <div class="sponsor-text"><h3>Metal Techniks</h3></div>
+        </a>
+        <a href="https://www.farmaciabajan.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/bajan.png" alt="Farmacia Bajan">
+            <div class="sponsor-text"><h3>Farmacia Bajan</h3></div>
+        </a>
+        <a href="https://www.magazinediana.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/diana.png" alt="Diana">
+            <div class="sponsor-text"><h3>Diana</h3></div>
+        </a>
+        <a href="https://www.boromir.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/boromir.png" alt="Boromir">
+            <div class="sponsor-text"><h3>Boromir</h3></div>
+        </a>
+        <a href="https://www.nordexim.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/nordexim.png" alt="Nordexim">
+            <div class="sponsor-text"><h3>Nordexim</h3></div>
+        </a>
+        <a href="https://doinamed.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/doinamed.png" alt="Doinamed">
+            <div class="sponsor-text"><h3>Doinamed</h3></div>
+        </a>
+        <a href="https://chimcomplex.com" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/chimcomplex.png" alt="Chimcomplex">
+            <div class="sponsor-text"><h3>Chimcomplex</h3></div>
+        </a>
+        <a href="https://kynita.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/kynita.png" alt="Kynita">
+            <div class="sponsor-text"><h3>Kynita</h3></div>
+        </a>
+        <a href="https://www.vilmar.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/vilmar.png" alt="Vilmar">
+            <div class="sponsor-text"><h3>Vilmar</h3></div>
+        </a>
+        <a href="https://www.bancatransilvania.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/bt.png" alt="Banca Transilvania">
+            <div class="sponsor-text"><h3>Banca Transilvania</h3></div>
+        </a>
+        <a href="https://www.cegim.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/cegim.png" alt="Cegim">
+            <div class="sponsor-text"><h3>Cegim</h3></div>
+        </a>
+        <a href="https://rodasim.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/rodasim.png" alt="Rodasim">
+            <div class="sponsor-text"><h3>Rodasim</h3></div>
+        </a>
+        <a href="https://www.dedeman.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/dedeman.png" alt="Dedeman">
+            <div class="sponsor-text"><h3>Dedeman</h3></div>
+        </a>
+        <a href="https://www.electrovalcea.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/electrovalcea.png" alt="Electrovalcea">
+            <div class="sponsor-text"><h3>Electrovalcea</h3></div>
+        </a>
+        <a href="https://www.rotary.org/en" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/rotary.png" alt="Rotary">
+            <div class="sponsor-text"><h3>Rotary</h3></div>
+        </a>
+        <a href="https://www.justconsulting.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/justconsulting.png" alt="Just Consulting">
+            <div class="sponsor-text"><h3>Just Consulting</h3></div>
+        </a>
+        <a href="https://medicalmavision.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/medicalma.png" alt="Medicalma Vision">
+            <div class="sponsor-text"><h3>Medicalma Vision</h3></div>
+        </a>
+        <a href="https://fcvl.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/fcvl.png" alt="Fundatia Comunitara Valcea">
+            <div class="sponsor-text"><h3>Fundatia Comunitara Valcea</h3></div>
+        </a>
+        <a href="https://fundatiacomunitarabucuresti.ro" target="_blank" class="sponsor-box">
+            <img src="images/sponsors/fcb.png" alt="Fundatia Comunitara Bucuresti">
+            <div class="sponsor-text"><h3>Fundatia Comunitara Bucuresti</h3></div>
+        </a>
     </div>
 </div>
 
-<div class="container">
-    <h1 id="title" style="text-align: center;">Membrii Echipei</h1>
-
-    <div class="image-side carousel-wrapper">
-     <button onclick="slideLeft()">&#8592;</button>
-     
-     <div class="carousel-window" id="carouselWindow">
-         
-        <div class="hover-box">
-            <img src="images/members/mlisan-mirela.png" alt="G">
-            <div class="secret-text">
-                <h3>Mlisan Mirela<br>- Mentor -</h3>
-                <p>
-                   - Profesor de informatica -
-                   <br>
-                   - Temelia echipei -
-                   <br>
-               </p>
-            </div>
-        </div>
-
-        <div class="hover-box">
-            <img src="images/members/coltos-robert.png" alt="G">
-            <div class="secret-text">
-                <h3>Coltos Robert<br>- Mentor -</h3>
-                <p>
-                   - Mentor Tehnic -
-                   <br>
-                   - Rezolva nevoile tehnice ale echipei -
-                   <br>
-               </p>
-            </div>
-        </div>
-
-        <div class="hover-box">
-            <img src="images/members/antonescu-valeria.png" alt="G">
-            <div class="secret-text">
-                <h3>Antonescu Valeria<br>- Mentor -</h3>
-                <p>
-                   - Profesor de limba si literatura romana -
-                   <br>
-                   - Aptitudini de relationare -
-                   <br>
-               </p>
-            </div>
-        </div>
-
-        <div class="hover-box">
-            <img src="images/members/popescu-daria.png" alt="G">
-            <div class="secret-text">
-                <h3>Popescu Daria</h3>
-                <p>
-                   - Team Leader -
-                   <br>
-                   - PR -
-                   <br>
-                   - Design Grafic -
-                   <br>
-                   - Social Media -
-               </p>
-            </div>
-        </div>
-
-        <div class="hover-box">
-           <img src="images/members/deaconescu-alex.png" alt="G">
-           <div class="secret-text">
-               <h3>Deaconescu Alex</h3>
-               <p>
-                  - Departament Tehnic -
-                  <br>
-                  - Capitan Constructie -
-                  <br>
-                  - Constructor -
-
-              </p>
-           </div>
-       </div>
-
-       <div class="hover-box">
-           <img src="images/members/lita-andrei.png" alt="G">
-           <div class="secret-text">
-               <h3>Lita Andrei</h3>
-               <p>
-                  - Departament Tehnic -
-                  <br>
-                  - Capitan Programare -
-                  <br>
-                  - Programator -
-              </p>
-           </div>
-       </div>
-
-
-        <div class="hover-box">
-            <img src="images/members/oprescu-octavian.png" alt="G">
-            <div class="secret-text">
-                <h3>Oprescu Octavian</h3>
-                <p>
-                   - Departament Tehnic -
-                <br>
-                   - Programator -
-                </p>
-            </div>
-        </div>
-
-        <div class="hover-box">
-            <img src="images/members/olaru-roberto.png" alt="G">
-            <div class="secret-text">
-                <h3>Olaru Roberto</h3>
-                <p>
-                   - Departament Tehnic -
-                   <br>
-                   - Constructor - 
-               </p>
-            </div>
-        </div>
-
-        <div class="hover-box">
-           <img src="images/members/radu-ioana.png" alt="G">
-           <div class="secret-text">
-               <h3>Radu Ioana</h3>
-               <p>
-                  - PR -
-                  <br>
-                  - Fotograf -
-                  <br>
-                  - Activitati -
-              </p>
-           </div>
-       </div>
-
-       <div class="hover-box">
-           <img src="images/members/drumia-razvan.png" alt="G">
-           <div class="secret-text">
-               <h3>Drumia Razvan</h3>
-               <p>
-                  - Departament Tehnic -
-                  <br>
-                  - Constructor -
-              </p>
-           </div>
-       </div>
-
-       <div class="hover-box">
-           <img src="images/members/dascalu-luca.png" alt="G">
-           <div class="secret-text">
-               <h3>Dascalu Luca</h3>
-               <p>
-                  - Departament Tehnic -
-                  <br>
-                  - Constructor -
-              </p>
-           </div>
-       </div>
-
-       <div class="hover-box">
-           <img src="images/members/popescu-tudor.png" alt="G">
-           <div class="secret-text">
-               <h3>Popescu Tudor</h3>
-               <p>
-                  - Departament Tehnic -
-                  <br>
-                  - Programator -
-              </p>
-           </div>
-       </div>
-
-       <div class="hover-box">
-           <img src="images/members/bughelea-mihnea.png" alt="G">
-           <div class="secret-text">
-               <h3>Bughelea Mihnea</h3>
-               <p>
-                  - Departament Tehnic -
-                  <br>
-                  - Constructor -
-              </p>
-           </div>
-       </div>
-
-       <div class="hover-box">
-           <img src="images/members/nica-maya.png" alt="G">
-           <div class="secret-text">
-               <h3>Nica Maya</h3>
-               <p>
-                  - PR -
-                  <br>
-                  - Outreach -
-                  <br>
-                  - Activitati -
-              </p>
-           </div>
-       </div>
-
-       <div class="hover-box">
-           <img src="images/members/cretan-daria.png" alt="G">
-           <div class="secret-text">
-               <h3>Cretan Daria</h3>
-               <p>
-                  - PR -
-                  <br>
-                  - Outreach -
-                  <br>
-                  - Activitati -
-              </p>
-           </div>
-       </div>
-
-       <div class="hover-box">
-           <img src="images/members/traistaru-razvan.png" alt="G">
-           <div class="secret-text">
-               <h3>Traistaru Razvan</h3>
-               <p>
-                  - PR -
-                  <br>
-                  - Outreach -
-                  <br>
-                  - Activitati -
-              </p>
-           </div>
-       </div>
-
-       <div class="hover-box">
-           <img src="images/members/caraponu-mihai.png" alt="G">
-           <div class="secret-text">
-               <h3>Caraponu Mihai</h3>
-               <p>
-                  - PR -
-                  <br>
-                  - Outreach -
-                  <br>
-                  - Activitati -
-              </p>
-           </div>
-       </div>
-
-     </div> <button onclick="slideRight()">&#8594;</button>
- </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
- <h1 id="title" style="text-align: center;">Premii</h1>
-
- <div class="awards-box">
-    <ul class="awards-list">
-       <h2>Sezonul 3 (Rover Ruckus, 2018-2019)</h2>
-       <h3>Etapa Nationala</h3>
-        <li>Motivate Award I</li>
-        <li>Promote Award I </li>
-       <br>
-        <h2>Sezonul 4 (Skystone, 2019-2020)</h2>
-        <h3>Etapa Regionala</h3>
-        <li>Inspire Award III</li>
-        <li>Finallist Alliance</li>
-        <li>Record European</li>
-       <br>
-        <h2>Sezonul 5 (Ultimate Goal, 2020-2021)</h2>
-        <h3>Etapa Regionala</h3>
-        <li>Control Award I</li>
-        <li>Locul 5 in Best Ranking Teams</li>
-       <br>
-        <h2>Sezonul 6 (Freight Frenzy, 2021-2022)</h2>
-        <h3>Etapa Regionala</h3>
-        <li>Motivate Award I</li>
-        <li>Locul 5 in Best Ranking Teams</li>
-        <li>Participare la concursul international Chicago Robotics Invitational, fiind in prima jumatate a clasamentului</li>
-       <br>
-       <h2>Sezonul 7 (Power Play, 2022-2023)</h2>
-        <li>Calificare la Etapa Nationala</li>
-       <br>
-        <h2>Sezonul 8 (Center Stage, 2023-2024)</h2>
-       <h3>Etapa Regionala</h3>
-        <li>Control Award I</li>
-        <li>Winning Alliance 2nd pick</li>
-       <h3>Etapa Nationala</h3>
-       <li>Design Award I</li>
-       <br>
-       <h2>Sezonul 10 (Decode, 2025-2026)</h2>
-       <h3>Etapa Regionala</h3>
-        <li>Reach Award I</li>
-       <br>
-    </ul>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
- <h1 id="title" style="text-align: center;">Sponsori</h1>
-
-<div class="sponsors-grid">
-
-<a href="https://primariavl.ro" target="_blank" class="sponsor-box">
-        <img src="images/sponsors/primariavl.png" alt="Primaria Ramnicu Valcea">
-        <div class="sponsor-text"><h3>Primaria Municipiului Ramnicu Valcea</h3></div>
-</a>
-
-<a href="https://xavitel.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/xavitel.png" alt="Xavitel">
-    <div class="sponsor-text"><h3>Xavitel</h3></div>
-</a>
-
-<a href="https://www.annabella.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/annabella.png" alt="Annabella">
-    <div class="sponsor-text"><h3>Annabella</h3></div>
-</a>
-
-<a href="https://rotakt.ro/?srsltid=AfmBOoozs1HwhtrojXbUswUN-9yAvGOUDg0k6iLL5zi4JuoKDgeka6IP" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/rotakt.png" alt="Rotakt">
-    <div class="sponsor-text"><h3>Rotakt</h3></div>
-</a>
-
-<a href="https://www.nurvil.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/nurvil.png" alt="Nurvil">
-    <div class="sponsor-text"><h3>Nurvil</h3></div>
-</a>
-
-<a href="https://www.minet.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/minet.png" alt="Minet">
-    <div class="sponsor-text"><h3>Minet</h3></div>
-</a>
-
-<a href="https://www.metaltechniks.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/metal-techniks.png" alt="Metal Techniks">
-    <div class="sponsor-text"><h3>Metal Techniks</h3></div>
-</a>
-
-<a href="https://www.farmaciabajan.ro/magazine.html?gad_source=1&gad_campaignid=21221686925&gclid=CjwKCAjwyMnNBhBNEiwA-KcguzKWiyVM_DRWUwNRRtp4Y_yLPGprAJjTex7tli5GTE8UaouuPVT0WRoCNl0QAvD_BwE" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/bajan.png" alt="Farmacia Bajan">
-    <div class="sponsor-text"><h3>Farmacia Bajan</h3></div>
-</a>
-
-<a href="https://www.magazinediana.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/diana.png" alt="Diana">
-    <div class="sponsor-text"><h3>Diana/h3></div>
-</a>
-
-<a href="https://www.boromir.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/boromir.png" alt="Boromir">
-    <div class="sponsor-text"><h3>Boromir</h3></div>
-</a>
-
-<a href="https://www.nordexim.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/nordexim.png" alt="Nordexim">
-    <div class="sponsor-text"><h3>Nordexim</h3></div>
-</a>
-
-<a href="https://doinamed.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/doinamed.png" alt="Doinamed">
-    <div class="sponsor-text"><h3>Doinamed</h3></div>
-</a>
-
-<a href="https://https://chimcomplex.com" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/chimcomplex.png" alt="Chimcomplex">
-    <div class="sponsor-text"><h3>Chimcomplex</h3></div>
-</a>
-
-<a href="https://kynita.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/kynita.png" alt="Kynita">
-    <div class="sponsor-text"><h3>Kynita</h3></div>
-</a>
-
-<a href="https://www.vilmar.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/vilmar.png" alt="Vilmar">
-    <div class="sponsor-text"><h3>Vilmar</h3></div>
-</a>
-
-
-<a href="https://www.bancatransilvania.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/bt.png" alt="Banca Transilvania">
-    <div class="sponsor-text"><h3>Banca Transilvania</h3></div>
-</a>
-
-
-<a href="https://www.cegim.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/cegim.png" alt="Cegim">
-    <div class="sponsor-text"><h3>Cegim</h3></div>
-</a>
-
-
-<a href="https://rodasim.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/rodasim.png" alt="Rodasim">
-    <div class="sponsor-text"><h3>Rodasim</h3></div>
-</a>
-
-<a href="https://www.dedeman.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/dedeman.png" alt="Dedeman">
-    <div class="sponsor-text"><h3>Dedeman</h3></div>
-</a>
-
-<a href="https://www.electrovalcea.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/electrovalcea.png" alt="Electrovalcea">
-    <div class="sponsor-text"><h3>Electrovalcea</h3></div>
-</a>
-
-<a href="https://www.rotary.org/en" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/rotary.png" alt="Rotary">
-    <div class="sponsor-text"><h3>Rotary</h3></div>
-</a>
-
-<a href="https://www.justconsulting.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/justconsulting.png" alt="Just Consulting">
-    <div class="sponsor-text"><h3>Just Consulting</h3></div>
-</a>
-
-<a href="https://medicalmavision.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/medicalma.png" alt="Medicalma Vision">
-    <div class="sponsor-text"><h3>Medicalma Vision</h3></div>
-</a>
-
-<a href="https://fcvl.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/fcvl.png" alt="Fundatia Comunitara Valcea">
-    <div class="sponsor-text"><h3>Fundatoa Comunitara Valcea</h3></div>
-</a>
-
-<a href="https://fundatiacomunitarabucuresti.ro" target="_blank" class="sponsor-box">
-    <img src="images/sponsors/fcb.png" alt="Fundatia Comunitara Bucuresti">
-    <div class="sponsor-text"><h3>Fundatia Comunitara Bucuresti</h3></div>
-</a>
-
-
-
-
-</div>
-</div>
-
-
-
 </body>
-
 <script src="script.js"></script>
-
 </html>
