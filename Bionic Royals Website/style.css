@@ -10,7 +10,7 @@
     --header-overlay: rgba(96, 0, 70, 0.76);
     --dark-overlay: rgba(0, 0, 0, 0.7);
     --text-light: #ffffff;
-    --text-dark: #333333;
+    --text-dark: #000000;
     --text-muted: #444444;
     --accent-color: #9034dc;
     --accent-yellow: #FEF200;
@@ -292,6 +292,19 @@ body {
     opacity: 1;
 }
 
+/* --- How are we section --- */
+
+.box {
+    border: 3px solid var(--accent-color);
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin: 40px auto 80px auto;
+    background: rgba(255,255,255,0.15);
+    max-width: 900px;
+    background-color: var(--text-light);
+}
+
+
 /* --- Awards & Sponsors Grid (Mobile default) --- */
 .awards-box {
     border: 3px solid var(--accent-color);
@@ -319,7 +332,8 @@ body {
 
 .sponsors-grid {
     display: grid;
-    grid-template-columns: repeat(2, auto); 
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
